@@ -1,11 +1,22 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "types": ["vite-plugin-svgr/client"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
