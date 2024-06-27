@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import MainLayout from "./layout/MainLayout";
-import AuthPage from "./pages/AuthPage";
+import MainLayout from "./layout/root-layout";
+import AuthPage from "./pages/auth-page";
 
 
 export default function AppRoutes() {

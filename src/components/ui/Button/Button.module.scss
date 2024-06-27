@@ -1,0 +1,78 @@
+@import "/src/assets/styles/variables";
+
+
+
+//
+//.dark {
+//  background-color: $bg-dark;
+//  color: $white;
+//  border: 1px solid $bg-gray;
+//
+//  &:hover {
+//    background-color: $bg-gray;
+//
+//  }
+//}
+//
+//.delete {
+//  background-color: #dd3434;
+//  color: $dark;
+//  border: 1px solid $bg-gray;
+//
+//  &:hover {
+//    background-color: #d14949;
+//  }
+//}
+.primary {
+    background-color: $primary;
+    color: #fff;
+    border: 1px solid darkblue;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+}
+.auto {
+  width: max-content;
+}
+.small {
+  width: 100px;
+}
+
+.full {
+  width: 100%;
+}
+
+.btn {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: button;
+  outline: none;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+
+  span {
+    transition: 0.3s;
+  }
+
+  svg {
+    transition: 0.4s;
+    position: absolute;
+    left: 8%;
+  }
+
+  @media (max-width: 540px) {
+    height: 35px;
+    font-size: 14px;
+  }
+
+}

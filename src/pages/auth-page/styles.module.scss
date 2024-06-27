@@ -1,0 +1,86 @@
+@import "/src/assets/styles/variables";
+
+.authPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./src/assets/img/bg-auth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 400px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+
+  @media (max-width: 540px) {
+      width: 90%;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.logoText {
+  width: 120px;
+  height: 49px;
+
+  @media (max-width: 540px) {
+    width: 100px;
+    height: 39px;
+  }
+}
+.decor {
+  width: 50px;
+  height: auto;
+
+  @media (max-width: 540px) {
+    width: 40px;
+  }
+}
+
+.info {
+  margin-top: 12px;
+
+  span {
+    margin-left: 5px;
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover{
+      color: $primary;
+    }
+  }
+}
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.fields {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
