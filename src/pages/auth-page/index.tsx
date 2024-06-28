@@ -3,7 +3,7 @@ import LogoIcon from "@/assets/svg/ToDoDo.svg?react";
 import RecordIcon from "@/assets/svg/record.svg?react";
 import {Form, Formik} from "formik";
 import {Button} from "@/components/ui/Button";
-import useAuth from '@/services/hooks/useAuth.ts';
+import useAuth from '@/services/hooks/useAuth';
 import Input from "@/components/ui/Input";
 
 

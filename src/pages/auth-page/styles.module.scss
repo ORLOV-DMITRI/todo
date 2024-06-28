@@ -1,4 +1,5 @@
 @import "/src/assets/styles/variables";
+@import "/src/assets/styles/mixins";
 
 .authPage {
   width: 100%;
@@ -10,19 +11,25 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .container {
-  width: 400px;
-  padding: 25px;
+  width: 550px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 
-  @media (max-width: 540px) {
-      width: 90%;
+  @include xl-lg {
+    width: 400px;
+    padding: 25px;
+  }
+  @include xs {
+    width: 90%;
   }
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -33,22 +40,32 @@
     height: 100%;
   }
 }
-.logoText {
-  width: 120px;
-  height: 49px;
 
-  @media (max-width: 540px) {
+.logoText {
+  width: 180px;
+  height: 70px;
+
+  @include xl-big {
+    width: 120px;
+    height: 49px;
+  }
+  @include xs {
     width: 100px;
     height: 39px;
   }
 }
+
 .decor {
-  width: 50px;
+  width: 70px;
   height: auto;
 
-  @media (max-width: 540px) {
+  @include xl-big {
+    width: 50px;
+  }
+  @include xs {
     width: 40px;
   }
+
 }
 
 .info {
@@ -61,16 +78,22 @@
     cursor: pointer;
     transition: 0.3s;
 
-    &:hover{
+    &:hover {
       color: $primary;
     }
   }
 }
+
 .title {
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 700;
   text-align: center;
+  
+  @include xl-big {
+    font-size: 16px;
+  }
 }
+
 .form {
   margin-top: 20px;
   display: flex;
@@ -78,6 +101,7 @@
   gap: 15px;
   width: 100%;
 }
+
 .fields {
   margin-top: 15px;
   display: flex;
